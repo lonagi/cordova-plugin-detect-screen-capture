@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-detect-screen-capture" version="0.1.0">
+  <name>cordova-plugin-detect-screen-capture</name>
+
+  <description>Detect Screen Recording and Screenshots</description>
+  <license>MIT</license>
+
+  <keywords>cordova,ios,ionic,capacitor,screen,recording,video,screenshot</keywords>
+  <repo>https://github.com/lonagi/cordova-plugin-detect-screen-capture.git</repo>
+  <issue>https://github.com/lonagi/cordova-plugin-detect-screen-capture/issues</issue>
+
+  <engines>
+    <engine name="cordova" version=">=8.0.0"/>
+    <engine name="cordova-ios" version=">=4.5.0"/>
+    <engine name="apple-ios" version=">=11.0" />
+  </engines>
+
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="DetectScreenRecording">
+        <param name="ios-package" value="DetectScreenRecording" />
+        <param name="onload" value="true" />
+      </feature>
+    </config-file>
+
+    <source-file src="src/ios/DetectScreenRecording.h" />
+    <source-file src="src/ios/DetectScreenRecording.m" />
+  </platform>
+</plugin>
