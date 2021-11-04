@@ -22,7 +22,6 @@
                         // cordova lib version is > 4
                         [self.commandDelegate evalJs:@"cordova.fireDocumentEvent('screenshot');" ];
                     }
-                    exit(0);
                   }];
     }
 }
