@@ -22,9 +22,16 @@
         <param name="ios-package" value="DetectScreenRecording" />
         <param name="onload" value="true" />
       </feature>
+
+      <feature name="detect-screenshot">
+          <param name="ios-package" value="screenshot" />
+          <param name="onload" value="true" />
+      </feature>
     </config-file>
 
-    <source-file src="src/ios/DetectScreenRecording.h" />
+    <header-file src="src/ios/DetectScreenRecording.h" />
     <source-file src="src/ios/DetectScreenRecording.m" />
+    <header-file src="src/ios/DetectScreenshot.h" />
+    <source-file src="src/ios/DetectScreenshot.m" />
   </platform>
 </plugin>
