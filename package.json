@@ -2,9 +2,6 @@
   "name": "cordova-plugin-detect-screen-capture",
   "version": "0.1.0",
   "description": "Detects screenshots and screen record on iOS",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "cordova": {
     "id": "cordova-plugin-detect-screen-capture",
     "platforms": [
@@ -25,8 +22,8 @@
     "ionic-native",
     "ionic-framework",
     "screenshot",
-    "screenrecord",
+    "screenrecord"
   ],
-  "author": "Lonagi",
+  "author": "lonagi",
   "license": "MIT"
 }
